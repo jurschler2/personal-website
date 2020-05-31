@@ -1,0 +1,8 @@
+  --App
+    |-- NavBar
+    |-- Routes
+        |-- Home
+        |-- About
+        |-- Portfolio
+        |     -- ProjectCard
+        |-- Contact
