@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <nav>
+    <a
+      aria-current="page"
+      class="active"
+      href="/"
+    >
+      JU
+    </a>
+    <a
+      href="/about"
+    >
+      About
+    </a>
+    <a
+      href="/portfolio"
+    >
+      Portfolio
+    </a>
+    <a
+      href="/contact"
+    >
+      Contact
+    </a>
+  </nav>
+</DocumentFragment>
+`;
