@@ -1,8 +1,16 @@
 import React from 'react';
 import './App.css';
-import Routes from "./Routes"
-import NavBar from "./NavBar"
+import Routes from "./components/Routes"
+import NavBar from "./components/NavBar"
 import { BrowserRouter } from "react-router-dom";
+
+/**
+ *  DESCRIPTION:
+ *  PROPS: None
+ *  FLOW: App
+ *  PARENT: index
+ *  CHILDREN:
+ */
 
 function App() {
   return (

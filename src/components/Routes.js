@@ -5,6 +5,13 @@ import About from "./About"
 import Contact from "./Contact"
 import Portfolio from "./Portfolio"
 
+/**
+ *  DESCRIPTION:
+ *  PROPS: None
+ *  FLOW: App => Routes
+ *  PARENT: App
+ *  CHILDREN: Home, About, Portfolio, Contact
+ */
 
 function Routes() {
   return (

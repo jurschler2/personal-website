@@ -1,16 +1,20 @@
 import React from "react";
-// import {images} from "./data";
+import { images } from "../content/data";
 
+/**
+ *  DESCRIPTION:
+ *  PROPS: None
+ *  FLOW: App => Routes => Home
+ *  PARENT: Routes
+ *  CHILDREN:
+ */
 
 function Home() {
 
   return (
-    <>
-      {/* <div style={{backgroundImage: `url(${images.background.source})`, height: '100%', width: '100%'}}>Meet Joe Urschler</div> */}
-      <div>Home</div>
-      {/* <img src={images.background.source} alt="" height='100%' width='100%'/> */}
-
-    </>
+    <div className="home-page">
+      <img src={images.background.source} alt="" height='100%' width='100%'/>
+    </div>
   )
 }
 

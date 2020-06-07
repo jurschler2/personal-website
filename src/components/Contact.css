@@ -1,0 +1,19 @@
+/** 
+ * Styling for the Contact component:
+ */
+
+.contact {
+  text-align: center;
+  margin: auto;
+}
+
+a > .fab.fa-linkedin, a > .fab.fa-angellist, a > .fab.fa-github {
+  position: relative;
+  left: 3rem;
+  font-size: 3rem;
+  color:#242337
+}
+
+a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-github {
+  color:#656573
+}
