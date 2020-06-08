@@ -2,11 +2,34 @@
 
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
-  <div>
-    Portfolio
+  <div
+    class="header"
+  >
+    <h3>
+      Portfolio
+    </h3>
   </div>
-  <div>
-    ProjectCard
+  <div
+    class="projectcard-container"
+  >
+    <div>
+      <span>
+        Project 1
+      </span>
+      This is the description of project 1 and this is the image 1.
+    </div>
+    <div>
+      <span>
+        Project 2
+      </span>
+      This is the description of project 2 and this is the image 2.
+    </div>
+    <div>
+      <span>
+        Project 3
+      </span>
+      This is the description of project 3 and this is the image 3.
+    </div>
   </div>
 </DocumentFragment>
 `;

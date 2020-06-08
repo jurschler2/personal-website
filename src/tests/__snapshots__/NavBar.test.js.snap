@@ -2,29 +2,55 @@
 
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
-  <nav>
-    <a
-      aria-current="page"
-      class="active"
-      href="/"
+  <nav
+    class="navbar navbar-expand-md navbar-light"
+  >
+    <ul
+      class="navbar-nav mr-auto"
     >
-      JU
-    </a>
-    <a
-      href="/about"
+      <li
+        class="nav-link personal-logo"
+      >
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          &gt;_ju
+        </a>
+      </li>
+    </ul>
+    <ul
+      class="navbar-nav ml-auto"
     >
-      About
-    </a>
-    <a
-      href="/portfolio"
-    >
-      Portfolio
-    </a>
-    <a
-      href="/contact"
-    >
-      Contact
-    </a>
+      <li
+        class="nav-link"
+      >
+        <a
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li
+        class="nav-link"
+      >
+        <a
+          href="/portfolio"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li
+        class="nav-link"
+      >
+        <a
+          href="/contact"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
   </nav>
 </DocumentFragment>
 `;

@@ -1,0 +1,33 @@
+/** 
+ * Styling for the Home component:
+ */
+
+.intro-hello {
+  font-family: Kanit;
+  font-weight: 300;
+  font-size: 150%;
+  color: #7b7b87;
+  display:  block;
+  margin: -1%;
+}
+.intro-name {
+  font-weight: 400;
+  font-size: 400%;
+  color: #39384b;
+  display:  block;
+  margin: -1%;
+}
+.intro-tagline {
+  font-weight: 400;
+  font-size: 400%;
+  color: #7b7b87;
+  display:  block;
+  margin: -1%;
+}
+
+.home-container {
+  margin-left: 30%;
+  margin-top: 5%;
+  text-align: left;
+  padding: 2%;
+}

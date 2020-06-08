@@ -1,11 +1,13 @@
 import lakeTahoe from "../images/lakeTahoe.jpg"
+import headshot from "../images/headshot.png"
 
 /**
  *  DESCRIPTION:
  */
 
 export const images = {
-  background: {source: lakeTahoe}
+  background: {source: lakeTahoe},
+  headshot: {source: headshot}
 };
 
 export const points = ["point 1", "point 2", "point 3"];

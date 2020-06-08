@@ -1,5 +1,5 @@
 import React from "react";
-import { images } from "../content/data";
+import "./Home.css"
 
 /**
  *  DESCRIPTION:
@@ -13,7 +13,11 @@ function Home() {
 
   return (
     <div className="home-page">
-      <img src={images.background.source} alt="" height='100%' width='100%'/>
+      <div className="home-container">
+        <p className="intro-hello">Hello there, my name is</p>
+        <p className="intro-name">Joseph Urschler.</p>
+        <p className="intro-tagline">I like to build things.</p>
+      </div>
     </div>
   )
 }

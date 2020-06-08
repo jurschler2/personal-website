@@ -3,8 +3,28 @@
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
   <div>
-    <div>
-      Home
+    <div
+      class="home-page"
+    >
+      <div
+        class="home-container"
+      >
+        <p
+          class="intro-hello"
+        >
+          Hello there, my name is
+        </p>
+        <p
+          class="intro-name"
+        >
+          Joseph Urschler.
+        </p>
+        <p
+          class="intro-tagline"
+        >
+          I like to build things.
+        </p>
+      </div>
     </div>
   </div>
 </DocumentFragment>

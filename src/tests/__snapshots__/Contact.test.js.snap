@@ -2,8 +2,37 @@
 
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
-  <div>
-    Contact
+  <div
+    class="contact"
+  >
+    <h3>
+      Contact
+    </h3>
+    <div
+      class="contact-link-container"
+    >
+      <a
+        href="https://www.linkedin.com/in/jurschler/"
+      >
+        <i
+          class="fab fa-linkedin"
+        />
+      </a>
+      <a
+        href="https://github.com/jurschler2"
+      >
+        <i
+          class="fab fa-github"
+        />
+      </a>
+      <a
+        href="https://angel.co/u/jurschler"
+      >
+        <i
+          class="fab fa-angellist"
+        />
+      </a>
+    </div>
   </div>
 </DocumentFragment>
 `;

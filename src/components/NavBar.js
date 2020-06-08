@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 /**
  *  DESCRIPTION:
@@ -11,16 +12,26 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <span>
-      <nav>
-        <NavLink exact to="/">JU</NavLink>
+    <>
+    <nav className="navbar navbar-expand-md navbar-light">
+      <ul className="navbar-nav mr-auto">
+          <li className="nav-link personal-logo">
+          <NavLink exact to="/">>_ju</NavLink>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li className="nav-link">
+          <NavLink exact to="/about">About</NavLink>
+          </li>
+          <li className="nav-link">
+          <NavLink exact to="/portfolio">Portfolio</NavLink>
+          </li>
+          <li className="nav-link">
+          <NavLink exact to="/contact">Contact</NavLink>
+          </li>
+        </ul>
       </nav>
-      <nav>  
-        <NavLink exact to="/about">About</NavLink>
-        <NavLink exact to="/portfolio">Portfolio</NavLink>
-        <NavLink exact to="/contact">Contact</NavLink>
-      </nav>
-    </span>
+    </>  
   )
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
-import BulletPoint from "./BulletPoint"
-import { points } from "../content/data"
+import BulletPoint from "./BulletPoint";
+import { points, images } from "../content/data";
+import "./About.css";
 
 /**
  *  DESCRIPTION:
@@ -20,13 +21,16 @@ function About() {
 
   return (
   <>  
-    <div className="header">
-      <h3>
-      About
-      </h3>
+    <div className="about-header">
+      Here is a little about me:
     </div>
-    <div className="bullet-point-container">
-      {renderBulletPoints()}
+    <div className="about-contents flex-container">
+      <div className="bullet-point-container">
+        {renderBulletPoints()}
+      </div>
+      <div className="img-container">
+        <img className="img-headshot" src={images.headshot.source} alt=""/>
+      </div>
     </div>
   </>
   )

@@ -2,8 +2,42 @@
 
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
-  <div>
-    About
+  <div
+    class="about-header"
+  >
+    Here is a little about me:
+  </div>
+  <div
+    class="about-contents flex-container"
+  >
+    <div
+      class="bullet-point-container"
+    >
+      <div
+        class="point 1 "
+      >
+        This is point 1.
+      </div>
+      <div
+        class="point 2 "
+      >
+        This is point 2.
+      </div>
+      <div
+        class="point 3 "
+      >
+        This is point 3.
+      </div>
+    </div>
+    <div
+      class="img-container"
+    >
+      <img
+        alt=""
+        class="img-headshot"
+        src="headshot.png"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -1,0 +1,36 @@
+/** 
+ * Styling for the NavBar component:
+ */
+
+nav a {
+  color: #242337;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+nav {
+  background-color: #e9e9eb;
+}
+
+nav a.active {
+  color: #39384b;
+  font-weight: bold;
+  border-bottom: 5px;
+  box-sizing: border-box;
+}
+
+nav a.active:hover {
+  color: #656573 !important;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #656573;
+}
+
+.personal-logo {
+  font-family: Kanit;
+  font-weight: 400;
+  font-size: large;
+  color: #242337;
+}
