@@ -69,7 +69,7 @@ function ProjectCard({ title, description, gallery, link }) {
     <div className="project-description-container">
       <div className="project-title"><strong>{title}</strong></div>
       <div className="project-description">
-        {description} Check it out on <a href={`${link}`}>Github</a>.
+        <p>{description} Check it out on <a href={`${link}`}>Github</a>.</p>
       </div>
     </div>
   </div>
@@ -77,6 +77,3 @@ function ProjectCard({ title, description, gallery, link }) {
 }
 
 export default ProjectCard;
-
-//Old code for images
-{/* <img src={img} alt={img} className="project-img-img"/> */}
