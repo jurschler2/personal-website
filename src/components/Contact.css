@@ -2,18 +2,163 @@
  * Styling for the Contact component:
  */
 
-.contact {
+/* .contact {
   text-align: center;
   margin: auto;
+} */
+
+.contact-header {
+  font-family: Kanit;
+  font-weight: 300;
+  font-size: 115%;
+  color: #7b7b87;
+  display:  block;
+  margin-left: 10%;
+  width: 80%;
+  text-align: left;
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
 
-a > .fab.fa-linkedin, a > .fab.fa-angellist, a > .fab.fa-github {
+.contact-link-container {
+  display: inline-block;
+  margin-top: 5%;
+  width: 80%;
+  margin-right:5%;
+}
+
+.contact-link {
+  display: inline-block;
+  width: 20%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+a > .fab.fa-linkedin, a > .fab.fa-angellist, a > .fab.fa-github, a > .fas.fa-paper-plane {
   position: relative;
-  left: 3rem;
   font-size: 3rem;
   color:#242337
 }
 
-a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-github {
+a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-github, a:hover > .fas.fa-paper-plane {
   color:#656573
+}
+
+.contact-resume-container {
+  display: inline-block;
+  margin-top: 5%;
+  width: 100%;
+  padding: 0 0 6rem 0;
+}
+
+.contact-resume {
+  display: inline-block;
+  margin-top: 5%;
+  text-align: left;
+  width: 90%;
+  margin-left:10%;
+  text-decoration: none;
+}
+.contact-resume-text {
+  font-weight: 900;
+  font-size: 0.8rem;
+  padding: 1rem;
+  width: 15rem;
+  position: relative;
+  top: 2rem;
+  background-color: #BDBDC3;
+  border-radius: 5px;
+  border: solid 2px #39384b;
+  color:  #242337;
+  text-decoration: none;
+}
+
+
+.contact-resume:hover {
+  text-decoration: none;
+  color: #656573;
+}
+.contact-resume-text:hover {
+  text-decoration: none;
+  color: #656573;
+}
+
+@media screen and (min-width: 760px) {
+
+  
+  .contact-header {
+  font-family: Kanit;
+  font-weight: 300;
+  font-size: calc(.5rem + 1.5vw);
+  color: #7b7b87;
+  display:  block;
+  margin-left: 10.5%;
+  text-align: left;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  }
+
+  .contact-resume-container {
+    display: inline-block;
+    margin-top: 5%;
+    width: 100%;
+    padding: 0 0 6rem 0;
+  }
+  
+  .contact-resume {
+    display: inline-block;
+    margin-top: 5%;
+    text-align: left;
+    margin-left:10.5%;
+    text-decoration: none;
+  }
+  .contact-resume-text {
+    font-weight: 900;
+    font-size: 0.8rem;
+    padding: 1rem;
+    width: 15rem;
+    position: relative;
+    top: 2rem;
+    background-color: #BDBDC3;
+    border-radius: 5px;
+    border: solid 2px #39384b;
+    color:  #242337;
+    text-decoration: none;
+  }
+
+  
+  .contact-resume:hover {
+    text-decoration: none;
+    color: #656573;
+  }
+  .contact-resume-text:hover {
+    text-decoration: none;
+    color: #656573;
+  }
+
+  .contact-link-container {
+    display: inline-block;
+    align-items: left;
+    margin-top: 5%;
+    margin-right: 50%;
+    width: 50%;
+  }
+  .contact-link {
+    display: inline-block;
+    align-items: left;
+    width: 16%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  
+  a > .fab.fa-linkedin, a > .fab.fa-angellist, a > .fab.fa-github, a > .fas.fa-paper-plane {
+    position: relative;
+    left: 3rem;
+    font-size: 3rem;
+    color:#242337
+  }
+  
+  a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-github, a:hover > .fas.fa-paper-plane {
+    color:#656573
+  }
 }

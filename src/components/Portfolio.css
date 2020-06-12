@@ -1,0 +1,31 @@
+/** 
+ * Styling for the Portfolio component:
+ */
+
+ .portfolio-header {
+  font-family: Kanit;
+  font-weight: 300;
+  font-size: 115%;
+  color: #7b7b87;
+  display:  block;
+  margin-left: 10%;
+  width: 80%;
+  text-align: left;
+  margin-bottom: 5%;
+  margin-top: 2%;
+ }
+
+
+ @media screen and (min-width: 760px) {
+ .portfolio-header {
+  font-family: Kanit;
+  font-weight: 300;
+  font-size: calc(.5rem + 1.5vw);
+  color: #7b7b87;
+  display:  block;
+  margin-left: 10.5%;
+  text-align: left;
+  margin-bottom: 5%;
+  margin-top: 2%;
+ }
+}

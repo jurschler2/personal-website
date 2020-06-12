@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard"
 import { projects } from "../content/data"
+import "./Portfolio.css";
 
 /**
  *  DESCRIPTION:
@@ -17,17 +18,16 @@ function Portfolio() {
     return projects.map(p => (
                               <ProjectCard title={p.title} 
                                            description={p.description} 
-                                           img={p.img} />
+                                           gallery={p.gallery}
+                                           link={p.link} />
                              )
                        )
   }
 
   return (
    <> 
-    <div className="header">
-      <h3>
-      Portfolio
-      </h3>
+    <div className="portfolio-header">
+      Here are some things I have built:
     </div>
     <div className="projectcard-container">
       {renderProjects()}

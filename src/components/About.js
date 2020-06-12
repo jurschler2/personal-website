@@ -16,7 +16,7 @@ function About() {
 
   const renderBulletPoints = () => {
 
-    return points.map(p => <BulletPoint point={p} />)
+    return points.map((p, idx) => <BulletPoint point={p} idx={idx} />)
   }
 
   return (
@@ -24,12 +24,14 @@ function About() {
     <div className="about-header">
       Here is a little about me:
     </div>
-    <div className="about-contents flex-container">
-      <div className="bullet-point-container">
-        {renderBulletPoints()}
-      </div>
+    <div className="about-container">
       <div className="img-container">
         <img className="img-headshot" src={images.headshot.source} alt=""/>
+      </div>
+      <div className="about-contents">
+        <div className="bullet-point-container">
+          {renderBulletPoints()}
+        </div>
       </div>
     </div>
   </>

@@ -5,29 +5,67 @@
 .intro-hello {
   font-family: Kanit;
   font-weight: 300;
-  font-size: 150%;
+  font-size: 115%;
   color: #7b7b87;
   display:  block;
   margin: -1%;
 }
+
 .intro-name {
   font-weight: 400;
-  font-size: 400%;
+  font-size: 225%;
   color: #39384b;
   display:  block;
   margin: -1%;
 }
+
 .intro-tagline {
   font-weight: 400;
-  font-size: 400%;
+  font-size: 225%;
   color: #7b7b87;
   display:  block;
   margin: -1%;
 }
 
 .home-container {
-  margin-left: 30%;
-  margin-top: 5%;
+  margin-left: 10%;
+  margin-top: 10%;
   text-align: left;
   padding: 2%;
+  width: 85%;
+}
+
+@media screen and (min-width: 760px) {
+  .intro-hello {
+    font-family: Kanit;
+    font-weight: 300;
+    font-size: calc(.5em + 1.5vw);
+    color: #7b7b87;
+    display:  block;
+    margin: -1%;
+  }
+  
+  .intro-name {
+    font-weight: 400;
+    font-size: calc(.5em + 4vw);
+    color: #39384b;
+    display:  block;
+    margin: -1%;
+  }
+  
+  .intro-tagline {
+    font-weight: 400;
+    font-size: calc(.5em + 4vw);
+    color: #7b7b87;
+    display:  block;
+    margin: -1%;
+  }
+  
+  .home-container {
+    margin-left: 25%;
+    margin-top: 5%;
+    text-align: left;
+    padding: 2%;
+    width: 60%;
+  }
 }

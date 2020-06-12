@@ -1,11 +1,15 @@
-/** 
- * Styling for the NavBar component:
- */
+
 
 nav a {
   color: #242337;
   text-decoration: none;
+  margin: .3rem;
   font-weight: 400;
+  
+}
+
+.nav-item {
+  text-align: left;
 }
 
 nav {
@@ -15,7 +19,7 @@ nav {
 nav a.active {
   color: #39384b;
   font-weight: bold;
-  border-bottom: 5px;
+  /* border-bottom: 5rem; */
   box-sizing: border-box;
 }
 
@@ -32,5 +36,6 @@ nav a:hover {
   font-family: Kanit;
   font-weight: 400;
   font-size: large;
-  color: #242337;
+  color:  #242337;
+  vertical-align: middle;
 }

@@ -1,3 +1,90 @@
 /** 
  * Styling for the BulletPoint component:
  */
+
+
+
+.bullet-point-container {
+  display: inline-block;
+  align-items: center;
+  vertical-align: center;
+  margin-left: 5%;
+  width: 90%;
+  text-align: left;
+}
+
+.bullet-point-content {
+  display:flex;
+  text-align: left;
+  width: 87%;
+  font-size: small;
+  letter-spacing: .5px;
+}
+
+.bullet-point-icon-container {
+  display:inline-block;
+  font-size: 1.5rem;
+  margin-right: 3%;
+  width: 5%;
+  justify-content: center;
+  color:#242337;
+}
+
+@media screen and (min-width: 760px) {
+  .bullet-point-container {
+  display: inline-block;
+  align-items: center;
+  vertical-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 85%;
+  text-align: left;
+}
+
+.bullet-point-content {
+  display:flex;
+  width: 80%;
+  text-align: left;
+  font-size: small;
+  letter-spacing: .5px;
+}
+
+.bullet-point-icon-container {
+  display:inline-block;
+  font-size: 1.5rem;
+  margin-right: 3%;
+  width: 5%;
+  justify-content: center;
+  color:#242337;
+}
+}
+
+
+
+
+/* .full-bullet-point {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  width: 80%;
+  text-align: left;
+}
+
+.point-paragraph {
+  margin: 1.5rem auto;
+  font-size: calc(0.075rem + 1.5vh);
+  letter-spacing: 1px;
+}
+
+.bullet-point-icon {
+  font-size: 1.5rem;
+  margin-right: 3%;
+  justify-content: center;
+  color:#242337;
+}
+
+@media screen and (min-width: 760px) {
+  .full-bullet-point {
+    left: 7rem;
+  }
+} */
