@@ -8,27 +8,8 @@ exports[`matches snapshot 1`] = `
     Here is a little about me:
   </div>
   <div
-    class="about-contents flex-container"
+    class="about-container"
   >
-    <div
-      class="bullet-point-container"
-    >
-      <div
-        class="point 1 "
-      >
-        This is point 1.
-      </div>
-      <div
-        class="point 2 "
-      >
-        This is point 2.
-      </div>
-      <div
-        class="point 3 "
-      >
-        This is point 3.
-      </div>
-    </div>
     <div
       class="img-container"
     >
@@ -37,6 +18,78 @@ exports[`matches snapshot 1`] = `
         class="img-headshot"
         src="headshot.png"
       />
+    </div>
+    <div
+      class="about-contents"
+    >
+      <div
+        class="bullet-point-container"
+      >
+        <div
+          class="bullet-point-container"
+        >
+          <div
+            class="bullet-point-content"
+          >
+            <div
+              class="bullet-point-icon-container"
+            >
+              •
+            </div>
+            <p>
+              I am a CPA turned software engineer. I’ve been interested in technology, especially coding, since writing video games with Scratch as a child. I have always felt a yearning to build things, and, in March 2020, I finally took the leap by enrolling in Rithm School in SF. Through Rithm I was able to build momentum in learning numerous languages, frameworks, and technologies, and was finally able to achieve a level of comfortability with coding.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bullet-point-container"
+        >
+          <div
+            class="bullet-point-content"
+          >
+            <div
+              class="bullet-point-icon-container"
+            >
+              •
+            </div>
+            <p>
+              I graduated with a Master’s and Bachelor’s of Accountancy from the University of Missouri in May 2016, and immediately begun my career in Deloitte’s Audit practice in San Francisco. I found ways to integrate my desire to be close to tech by working on startup clients, and by earning a 7-month rotation on an Audit Innovation project developing the firm’s next generation audit platform, Omnia. After three years at Deloitte, I left for Connor Group in September 2019 to split time in the Financial Operations and the newly created Digital Solutions practices. While this move brought me closer to the development side, it caused me to realize I needed to take the full leap.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bullet-point-container"
+        >
+          <div
+            class="bullet-point-content"
+          >
+            <div
+              class="bullet-point-icon-container"
+            >
+              •
+            </div>
+            <p>
+              Rithm afforded me the opportunity to intern with Clever Counsel, a platform that optimizes the case-building process for lawyers representing those who have experienced wage discrimination. Prior to any development, I had to quickly become acquainted with an existing codebase larger than any with which I had worked before. Once up-to-speed, I developed the password-reset functionality from scratch, which consisted of several React components, several Flask RESTful API endpoints, new instance/class methods for the user SQLAlchemy model connected to a MySQL database, token signing/hashing with itsdangerous, sending emails using Flask-Mail, a simple server in AWS, and of course various tests for both the frontend and backend.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bullet-point-container"
+        >
+          <div
+            class="bullet-point-content"
+          >
+            <div
+              class="bullet-point-icon-container"
+            >
+              •
+            </div>
+            <p>
+              I graduate from Rithm in late June and am looking for a full-stack or backend software engineering role ideally at a medium-large company where I can continue to learn and grow. My frontend experience consists of JavaScript (Vanilla, React, jQuery), HTML, and CSS (Vanilla, Bootstrap), while my backend experience consists of JavaScript (Express/Node), Python (Vanilla, Flask), SQL (PostgreSQL, MySQL), and AWS (S3, SES, EC2). I have enjoyed learning all of these technologies and am happy to continue learning more in my career.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
