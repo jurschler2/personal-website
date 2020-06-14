@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import resume from "./JosephUrschlerResume.pdf";
 
 /**
  *  DESCRIPTION:
@@ -14,7 +15,7 @@ function Contact() {
   <>
     <div className="contact">
       <div className="contact-header">
-       Get in contact:
+      Check out my resume and get in contact:
       </div>
       <div className="contact-link-container">
         <div className="contact-link">
@@ -30,17 +31,16 @@ function Contact() {
           <a href="mailto:jurschler25@gmail.com"><i className="fas fa-paper-plane"></i></a>
         </div>
       </div>
-      {/* <div className="contact-resume-container">
+      <div className="contact-resume-container">
         <div className="contact-resume">
-          <a href="google.com">
+          <a href={resume} download>
             <p className="contact-resume-text">Download Resume</p>
           </a>
         </div>
-      </div> */}
+      </div>
     </div>
   </>
   );
 }
 
 export default Contact;
-//Check out my resume and get in contact:
