@@ -12,6 +12,11 @@ nav a {
   text-align: left;
 }
 
+.navigationBar {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   background-color: #e9e9eb;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import {Container} from "reactstrap";
 import "./Home.css"
 
 /**
@@ -12,13 +13,13 @@ import "./Home.css"
 function Home() {
 
   return (
-    <div className="home-page">
+    <Container className="sectionContainer" id="/">
       <div className="home-container">
         <p className="intro-hello">Hello there, my name is</p>
         <p className="intro-name">Joseph Urschler.</p>
         <p className="intro-tagline">I like to build things.</p>
       </div>
-    </div>
+    </Container>
   )
 }
 

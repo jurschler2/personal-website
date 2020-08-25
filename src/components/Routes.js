@@ -29,9 +29,6 @@ function Routes() {
         <Route exact path="/contact">
           <Contact />
         </Route>  
-        <Route exact path="/resume">
-          <a href="google.com" alt=""></a>
-        </Route>
         <Redirect to="/"/>
       </Switch>
     </div>

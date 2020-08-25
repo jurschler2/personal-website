@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import resume from "./JosephUrschlerResume.pdf";
+import { Container } from "reactstrap";
 
 /**
  *  DESCRIPTION:
@@ -12,7 +13,7 @@ import resume from "./JosephUrschlerResume.pdf";
 
 function Contact() {
   return (
-  <>
+  <Container className="sectionContainer" id="/contact">
     <div className="contact">
       <div className="contact-header">
       Check out my resume and get in contact:
@@ -39,7 +40,7 @@ function Contact() {
         </div>
       </div>
     </div>
-  </>
+  </Container>
   );
 }
 

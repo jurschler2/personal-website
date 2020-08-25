@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard"
 import { projects } from "../content/data"
 import "./Portfolio.css";
+import { Container } from "reactstrap";
 
 /**
  *  DESCRIPTION:
@@ -25,14 +26,14 @@ function Portfolio() {
   }
 
   return (
-   <> 
+   <Container className="sectionContainer" id="/portfolio"> 
     <div className="portfolio-header">
       Here are some things I have built:
     </div>
     <div className="projectcard-container">
       {renderProjects()}
     </div> 
-   </>
+   </Container>
   )
 }
 
