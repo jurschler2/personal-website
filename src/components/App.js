@@ -14,16 +14,20 @@ import AOS from 'aos';
  *  CHILDREN: NavigationBar, FullPage
  */
 
-// Initialize the scroll animation
-AOS.init({
-  offset: 200,
-  duration: 500,
-  easing: 'ease-out-quart',
-  delay: 100,
-  startEvent: 'load'
-});
 
 function App() {
+
+
+  // Initialize the scroll animation
+  AOS.init({
+    offset: 200,
+    duration: 500,
+    easing: 'ease-out-quart',
+    delay: 100,
+    startEvent: 'load'
+  });
+
+  
   return (
     <div className="App">
       {/* <BrowserRouter> */}

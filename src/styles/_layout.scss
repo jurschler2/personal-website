@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/functions.scss";
+@import "~bootstrap/scss/variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import '_colors.scss';
+
+$backgroundColor: #d3d3d7;
+
+#root {
+  background-color: $backgroundColor
+}
+
+.aboutRule {
+  border-bottom: 2px solid $tertiaryColor;
+  margin-bottom: 1rem;
+  max-width: 300px;
+}
+
+.aboutImage {
+  box-shadow: -10px 10px 0 transparentize($color: $primaryColor, $amount: .8);
+  border: 4px solid $secondaryColor;
+}
+
+.sectionContainer {
+  padding: 100px 0;
+  color: $primaryColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

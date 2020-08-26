@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/functions.scss";
+@import "~bootstrap/scss/variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import '_colors.scss';
+
+headerFont {
+  font-family: Kanit;
+  font-weight: 300;
+  font-style: normal;
+  color: $secondaryColor;
+}
+
+primaryFont {
+  font-family: Calibri, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $primaryColor;
+}
+
+p {
+  @extend primaryFont;
+  line-height: 1.7rem;
+  letter-spacing: .02rem;
+}
+
+h3 {
+  @extend headerFont;
+  letter-spacing: .03rem;
+  font-weight: 400 !important;
+  font-style: normal;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./BulletPoint.css";
+// import "./BulletPoint.css";
 
 /**
  *  DESCRIPTION:
@@ -13,10 +13,10 @@ function BulletPoint({point}) {
   return (
 
     <div className="bullet-point-container">
-      <div className="bullet-point-content">
-      <div className="bullet-point-icon-container">•</div>
-        <p>{point}</p>
-        </div>
+      <div className="bullet-point-content" data-aos="fade-left">
+        <div className="bullet-point-icon-container">•</div>
+          <p>{point}</p>
+      </div>
     </div>
   
   )
@@ -24,18 +24,3 @@ function BulletPoint({point}) {
 }
 
 export default BulletPoint;
-
-
-
-
-
-// return (
-//   <div className={`${point}-${idx} full-bullet-point`}>
-//    <p className="bullet-point-icon">•</p> 
-//     <div className="point-paragraph">
-//       <p>
-//         {point}
-//       </p>
-//     </div>
-//   </div>
-// )

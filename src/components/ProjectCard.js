@@ -54,7 +54,7 @@ function ProjectCard({ title, description, gallery, link }) {
 
   return (
   <div className="project-container">
-    <div className="project-img-container">
+    <div className="project-img-container" data-aos="fade-right">
       <Carousel
         activeIndex={activeIndex}
         next={next}
@@ -66,7 +66,7 @@ function ProjectCard({ title, description, gallery, link }) {
         <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
       </Carousel>    
     </div>
-    <div className="project-description-container">
+    <div className="project-description-container" data-aos="fade-left">
       <div className="project-title"><strong>{title}</strong></div>
       <div className="project-description">
         <p>{description} Check it out on <a href={`${link}`}>Github</a>.</p>

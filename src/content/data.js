@@ -36,33 +36,39 @@ export const points = [
 ];
 
 export const projects = [
-  {"title": "Microblog React App","link": "https://github.com/jurschler2/react-redux-microblog", "description": "Microblog is a full-stack React application that is a basic blogging site. Anyone is able to go to the site, create posts, vote on posts, and leave comments on posts. The primary focus of this project was state management through the usage of React Redux. The rest of the frontend was built out using React. The backend was written Node/Express, and handles calls from the frontend to update post data within a PostgreSQL database. This project was my first time using Redux for more robust state management, and it helped me understand just how useful Redux could be, especially for an application that should be scalable with many posts/comments/etc.", 
-    gallery: [
-      {"img": microblog_1, "altText": "Image 1", "caption":"Landing Page"},
-      {"img": microblog_2, "altText": "Image 2", "caption":"Add a Post"},
-      {"img": microblog_3, "altText": "Image 3", "caption":"Post Details and Add Comments"},
-      {"img": microblog_4, "altText": "Image 4", "caption":"Edit a Post"}
-    ]},
-  {"title": "Jobly React App","link": "https://github.com/jurschler2/react-jobly","description": "Jobly is a full-stack React application that enables users to apply for jobs at specific companies. To view the job listings, users must sign up and log in to receive a login token for authentication. Nearly all routes in this site are protected by a middleware authentication function that validates the login token provided by the user. Valid users are able to search for jobs, apply for jobs, and edit their profiles. This was one of my first React projects, and it helped me learn the usefulness of components and hooks, as well as frontend hierarchical design.", 
-    gallery: [
-      {"img": jobly_1, "altText": "Image 1", "caption":"Landing Page"},
-      {"img": jobly_2, "altText": "Image 2", "caption":"User Sign-Up"},
-      {"img": jobly_3, "altText": "Image 3", "caption":"User Login"},
-      {"img": jobly_4, "altText": "Image 4", "caption":"Homepage"},
-      {"img": jobly_5, "altText": "Image 5", "caption":"Companies"},
-      {"img": jobly_6, "altText": "Image 6", "caption":"Apply to a Company's Jobs"},
-      {"img": jobly_7, "altText": "Image 7", "caption":"Apply to Any Jobs"},
-      {"img": jobly_8, "altText": "Image 8", "caption":"User's Profile"}
-    ]},
-  {"title": "Warbler Flask App","link": "https://github.com/jurschler2/flask-warbler", "description": "Warbler is a full-stack Flask application that functions like a lite clone of Twitter. To interact with the site, a user must first sign up and then login to receive a login token for authentication. Nearly all functionality is protected by a python decorator in the Flask backend to authenticate a user. Once inside the application, users can follow other users, write warbles (tweets), view follower or all warbles, like warbles, among other things. This project was written with a Jinja-supplied frontend, Flask backend, and a PostgreSQL database. The focus of this project was primarily on the database structure and table schemas to map out relationships between users, warbles, etc. SQLAlchemy was used in conjunction with the Flask routes to abstract user specific data based on the route requested. At the time, this was my biggest Python (as well as SQL) project, and it helped me get a better understanding of backend routing and database design patterns.", 
-    gallery: [
-      {"img": warbler_1, "altText": "Image 1", "caption": "Landing Page"},
-      {"img": warbler_2, "altText": "Image 2", "caption": "User Sign-Up"},
-      {"img": warbler_3, "altText": "Image 3", "caption": "User Login"},
-      {"img": warbler_4, "altText": "Image 4", "caption": "Homepage"},
-      {"img": warbler_5, "altText": "Image 5", "caption": "User Profile"},
-      {"img": warbler_6, "altText": "Image 6", "caption": "User's Message"},
-      {"img": warbler_7, "altText": "Image 7", "caption": "User Create Message"},
-      {"img": warbler_8, "altText": "Image 8", "caption": "Search Users"}
-    ]}
+  {"title": "Microblog React App",
+   "link": "https://github.com/jurschler2/react-redux-microblog",
+   "description": "Microblog is a full-stack React application that is a basic blogging site. Anyone is able to go to the site, create posts, vote on posts, and leave comments on posts. The primary focus of this project was state management through the usage of React Redux. The rest of the frontend was built out using React. The backend was written Node/Express, and handles calls from the frontend to update post data within a PostgreSQL database. This project was my first time using Redux for more robust state management, and it helped me understand just how useful Redux could be, especially for an application that should be scalable with many posts/comments/etc.", 
+   "gallery": [
+     {"img": microblog_1, "altText": "Image 1", "caption":"Landing Page"},
+     {"img": microblog_2, "altText": "Image 2", "caption":"Add a Post"},
+     {"img": microblog_3, "altText": "Image 3", "caption":"Post Details and Add Comments"},
+     {"img": microblog_4, "altText": "Image 4", "caption":"Edit a Post"}
+   ]},
+  {"title": "Jobly React App",
+   "link": "https://github.com/jurschler2/react-jobly",
+   "description": "Jobly is a full-stack React application that enables users to apply for jobs at specific companies. To view the job listings, users must sign up and log in to receive a login token for authentication. Nearly all routes in this site are protected by a middleware authentication function that validates the login token provided by the user. Valid users are able to search for jobs, apply for jobs, and edit their profiles. This was one of my first React projects, and it helped me learn the usefulness of components and hooks, as well as frontend hierarchical design.", 
+   "gallery": [
+     {"img": jobly_1, "altText": "Image 1", "caption":"Landing Page"},
+     {"img": jobly_2, "altText": "Image 2", "caption":"User Sign-Up"},
+     {"img": jobly_3, "altText": "Image 3", "caption":"User Login"},
+     {"img": jobly_4, "altText": "Image 4", "caption":"Homepage"},
+     {"img": jobly_5, "altText": "Image 5", "caption":"Companies"},
+     {"img": jobly_6, "altText": "Image 6", "caption":"Apply to a Company's Jobs"},
+     {"img": jobly_7, "altText": "Image 7", "caption":"Apply to Any Jobs"},
+     {"img": jobly_8, "altText": "Image 8", "caption":"User's Profile"}
+   ]},
+  {"title": "Warbler Flask App",
+   "link": "https://github.com/jurschler2/flask-warbler",
+   "description": "Warbler is a full-stack Flask application that functions like a lite clone of Twitter. To interact with the site, a user must first sign up and then login to receive a login token for authentication. Nearly all functionality is protected by a python decorator in the Flask backend to authenticate a user. Once inside the application, users can follow other users, write warbles (tweets), view follower or all warbles, like warbles, among other things. This project was written with a Jinja-supplied frontend, Flask backend, and a PostgreSQL database. The focus of this project was primarily on the database structure and table schemas to map out relationships between users, warbles, etc. SQLAlchemy was used in conjunction with the Flask routes to abstract user specific data based on the route requested. At the time, this was my biggest Python (as well as SQL) project, and it helped me get a better understanding of backend routing and database design patterns.", 
+   "gallery": [
+     {"img": warbler_1, "altText": "Image 1", "caption": "Landing Page"},
+     {"img": warbler_2, "altText": "Image 2", "caption": "User Sign-Up"},
+     {"img": warbler_3, "altText": "Image 3", "caption": "User Login"},
+     {"img": warbler_4, "altText": "Image 4", "caption": "Homepage"},
+     {"img": warbler_5, "altText": "Image 5", "caption": "User Profile"},
+     {"img": warbler_6, "altText": "Image 6", "caption": "User's Message"},
+     {"img": warbler_7, "altText": "Image 7", "caption": "User Create Message"},
+     {"img": warbler_8, "altText": "Image 8", "caption": "Search Users"}
+   ]}
 ];
