@@ -6,21 +6,28 @@
 $backgroundColor: #d3d3d7;
 $cardColor: #bdbdc3;
 
+/* FULLPAGE */
+
 #root {
   background-color: $backgroundColor;
 }
 
+/* NAVIGATIONBAR */ 
+
 .navBar {
-  height: 80px;
+  height: 50px;
   background-color: transparentize($color: $backgroundColor, $amount: 0);
-  // box-shadow: 0px 3px 5px rgba($color: #000000, $alpha: .1);
 }
 
-.navbar-collapse.collapse.show {
-  background-color: $backgroundColor;
-  background-color: transparentize($color: $backgroundColor, $amount: 0);
-  padding-bottom: 1.5rem;
+.navigationBar {
+  background-color: $tertiaryColor;
 }
+
+.navigationBar.collapse.show {
+  background-color: $tertiaryColor;
+}
+
+/* THROUGHOUT */
 
 .sectionContainer {
   margin: 2rem;
@@ -39,7 +46,6 @@ $cardColor: #bdbdc3;
   max-width: 500px;
 }
 
-
 /* ABOUT */
 
 .aboutRule {
@@ -54,7 +60,6 @@ $cardColor: #bdbdc3;
   // width: 30%;
 }
 
-
 /* PORTFOLIO */
 
 .portfolioRule {
@@ -66,10 +71,8 @@ $cardColor: #bdbdc3;
 .projectCardContainer {
   padding: 0rem;
   border-radius: 2px;
-  // box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: .1);
   margin: 1rem 0;
 }
-
 
 /* PROJECTCARD */
 
@@ -109,12 +112,70 @@ $cardColor: #bdbdc3;
   padding: 1rem;
 }
 
+/* CONTACT */
+
+a > .fab.fa-linkedin, a > .fab.fa-angellist, a > .fab.fa-github, a > .fas.fa-paper-plane {
+  position: relative;
+  font-size: 3rem;
+  color:#242337
+}
+
+a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-github, a:hover > .fas.fa-paper-plane {
+  color: $tertiaryColor;
+}
+
+.contact-link-container {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.contact-resume-container {
+  display: inline-block;
+  margin-top: 5%;
+  width: 100%;
+  padding: 0 0 6rem 0;
+}
+
+.contact-resume {
+  display: inline-block;
+  text-decoration: none;
+}
+.contact-resume-text {
+  font-weight: 900;
+  font-size: 0.8rem;
+  padding: 1rem;
+  width: 15rem;
+  position: relative;
+  box-shadow: -10px 10px 0 transparentize($color: $primaryColor, $amount: .8);
+  border: 4px solid $secondaryColor;
+  text-decoration: none;
+
+  &:hover {
+    background-color: lighten($color: $backgroundColor, $amount: 35%);
+    background-blend-mode: overlay;
+  }
+}
+
 @include media-breakpoint-down(md) {
 
-  // when featured project image is stacked on card
+  .fullPage {
+    padding: 1rem;
+  }
+
   .projectImage {
     margin-bottom: 1rem;
     width: 100%;
   }
+
+  .portfolioRule {
+    max-width: 150px;
+  }
+  .aboutRule {
+    max-width: 150px;
+  }
+  .contactRule {
+    max-width: 150px;
+  }
+
 
 }

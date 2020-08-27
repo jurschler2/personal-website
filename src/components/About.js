@@ -2,7 +2,6 @@ import React from "react";
 import BulletPoint from "./BulletPoint";
 import { points, images } from "../content/data";
 import { Container, Image, Row, Col  } from "react-bootstrap"
-// import "./About.css";
 
 /**
  *  DESCRIPTION:
@@ -36,9 +35,9 @@ function About() {
 
         <Col md={7} lg={6} >
           <h3 data-aos="fade-up" className="about-header">
-            Here is a little about me:
+            About
           </h3>
-          <div data-aos="fade" className="aboutRule"></div>
+          <div data-aos="fade-right" className="aboutRule"></div>
           <div className="about-container">
             <div className="about-contents">
               <div className="bullet-point-container">

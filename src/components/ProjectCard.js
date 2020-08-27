@@ -6,7 +6,6 @@ import {
   CarouselIndicators
 } from 'reactstrap';
 import { Card, Row, Col } from 'react-bootstrap';
-// import "./ProjectCard.css";
 
 /**
  *  DESCRIPTION:
@@ -66,8 +65,6 @@ function ProjectCard({ title, description, gallery, link, tech }) {
   }
 
   const techStack = createTechTags(tech, title);
-
-  
 
   return (
   <Card className="project-container col-12" data-aos="fade-right">

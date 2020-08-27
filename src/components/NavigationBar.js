@@ -8,7 +8,6 @@ import {
   NavItem
 } from 'reactstrap';
 import * as Scroll from 'react-scroll';
-import "./NavBar.css";
 
 /**
  *  DESCRIPTION:
@@ -48,7 +47,7 @@ function NavigationBar() {
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <Link
-                          className="nav-link"
+                          className="nav-link text-left"
                           delay={DELAY}
                           smooth={SMOOTH}
                           duration={DURATION}
@@ -60,7 +59,7 @@ function NavigationBar() {
                 </NavItem>
                 <NavItem>
                   <Link
-                          className="nav-link"
+                          className="nav-link text-left"
                           delay={DELAY}
                           smooth={SMOOTH}
                           duration={DURATION}
@@ -72,7 +71,7 @@ function NavigationBar() {
                 </NavItem>
                 <NavItem>
                   <Link
-                          className="nav-link"
+                          className="nav-link text-left"
                           delay={DELAY}
                           smooth={SMOOTH}
                           duration={DURATION}

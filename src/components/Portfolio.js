@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard"
 import { projects } from "../content/data"
-// import "./Portfolio.css";
 import { Container, Row, Col } from "reactstrap";
 
 /**
@@ -32,9 +31,9 @@ function Portfolio() {
      <Col md={12} lg={12}>
        <div className="portfolio-header">
           <h3 data-aos="fade-down" className="text-center">
-            Here are some things I have built:
+            Portfolio
           </h3>
-          <div data-aos="fade" className="portfolioRule mx-auto mt-3 mb-5"></div>
+          <div data-aos="fade-right" className="portfolioRule mx-auto mt-3 mb-5"></div>
        </div>
      </Col>
    

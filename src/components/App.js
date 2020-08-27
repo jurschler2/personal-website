@@ -1,10 +1,7 @@
 import React from 'react';
-import './App.css';
 import FullPage from "./FullPage"
 import NavigationBar from "./NavigationBar"
 import AOS from 'aos';
-// import Routes from "./Routes"
-// import { BrowserRouter } from "react-router-dom";
 
 /**
  *  DESCRIPTION:
@@ -17,7 +14,6 @@ import AOS from 'aos';
 
 function App() {
 
-
   // Initialize the scroll animation
   AOS.init({
     offset: 200,
@@ -27,14 +23,10 @@ function App() {
     startEvent: 'load'
   });
 
-  
   return (
     <div className="App">
-      {/* <BrowserRouter> */}
         <NavigationBar />
-        <FullPage />
-        {/* <Routes /> */}
-      {/* </BrowserRouter> */}
+        <FullPage className="fullPage"/>
     </div>
   );
 }
