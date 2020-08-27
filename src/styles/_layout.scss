@@ -162,6 +162,19 @@ a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-githu
 
 @include media-breakpoint-down(md) {
 
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5){
+
+      html,
+      body{
+        width:100%;
+        overflow-x:hidden;
+      }
+    }
+
   .fullPage {
     padding: 1rem;
   }
