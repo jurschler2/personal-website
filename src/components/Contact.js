@@ -39,7 +39,7 @@ function Contact() {
           </div>
         </Col>
         <Col md={12} lg={12}>
-          <div className="contact-resume-container" data-aos="fade-up">
+          <div className="contact-resume-container text-center" data-aos="fade-up">
             <div className="contact-resume">
               <a href={resume} download>
                 <p className="contact-resume-text text-center">Download Resume</p>

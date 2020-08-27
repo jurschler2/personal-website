@@ -84,7 +84,6 @@ $cardColor: #bdbdc3;
 
 .project-container.card {
   background-color: $cardColor;
-  padding: 2rem;
   margin: 1rem 0;
 }
 
@@ -94,7 +93,7 @@ $cardColor: #bdbdc3;
 }
 
 .projectImage {
-  width: 60%;
+  width: 100%;
   background-position: left;
   background-size: cover;
   background-color: $secondaryColor;
@@ -109,7 +108,11 @@ $cardColor: #bdbdc3;
 }
 
 .projectImageContainer {
+  width: 60%;
+  // padding-left: 20%;
+  // padding-right: 20%;
   padding: 1rem;
+  margin: auto;
 }
 
 /* CONTACT */
@@ -140,6 +143,7 @@ a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-githu
   display: inline-block;
   text-decoration: none;
 }
+
 .contact-resume-text {
   font-weight: 900;
   font-size: 0.8rem;
@@ -162,6 +166,10 @@ a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-githu
     padding: 1rem;
   }
 
+  .projectImageContainer {
+    width: 100%;
+  }
+
   .projectImage {
     margin-bottom: 1rem;
     width: 100%;
@@ -170,9 +178,11 @@ a:hover > .fab.fa-linkedin, a:hover > .fab.fa-angellist, a:hover > .fab.fa-githu
   .portfolioRule {
     max-width: 150px;
   }
+
   .aboutRule {
     max-width: 150px;
   }
+
   .contactRule {
     max-width: 150px;
   }

@@ -45,7 +45,6 @@ function ProjectCard({ title, description, gallery, link, tech }) {
         key={item.img}
       >
         <img className="projectImage" src={item.img} alt={item.altText}/>
-        <div className="carousel-caption"><strong>{item.caption}</strong></div>
       </CarouselItem>
     );
   });
@@ -77,7 +76,7 @@ function ProjectCard({ title, description, gallery, link, tech }) {
             previous={previous}
             >
             <CarouselIndicators items={gallery} activeIndex={activeIndex} onClickHandler={goToIndex} />
-            {slides}
+              {slides}
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
           </Carousel>    
