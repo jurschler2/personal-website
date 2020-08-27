@@ -4,26 +4,117 @@
 @import '_colors.scss';
 
 $backgroundColor: #d3d3d7;
+$cardColor: #bdbdc3;
 
 #root {
-  background-color: $backgroundColor
+  background-color: $backgroundColor;
 }
 
-.aboutRule {
-  border-bottom: 2px solid $tertiaryColor;
-  margin-bottom: 1rem;
-  max-width: 300px;
+.navBar {
+  height: 80px;
+  background-color: transparentize($color: $backgroundColor, $amount: 0);
+  // box-shadow: 0px 3px 5px rgba($color: #000000, $alpha: .1);
 }
 
-.aboutImage {
-  box-shadow: -10px 10px 0 transparentize($color: $primaryColor, $amount: .8);
-  border: 4px solid $secondaryColor;
+.navbar-collapse.collapse.show {
+  background-color: $backgroundColor;
+  background-color: transparentize($color: $backgroundColor, $amount: 0);
+  padding-bottom: 1.5rem;
 }
 
 .sectionContainer {
+  margin: 2rem;
   padding: 100px 0;
   color: $primaryColor;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* HOME */
+
+.homeRule {
+  border-bottom: 2px solid $tertiaryColor;
+  margin-bottom: 1rem;
+  max-width: 500px;
+}
+
+
+/* ABOUT */
+
+.aboutRule {
+  border-bottom: 2px solid $tertiaryColor;
+  margin-bottom: 1rem;
+  max-width: 500px;
+}
+
+.aboutImage {
+  box-shadow: -10px 10px 0 transparentize($color: $primaryColor, $amount: .8);
+  border: 4px solid $secondaryColor;
+  // width: 30%;
+}
+
+
+/* PORTFOLIO */
+
+.portfolioRule {
+  border-bottom: 2px solid $tertiaryColor;
+  margin-bottom: 1rem;
+  max-width: 500px;
+}
+
+.projectCardContainer {
+  padding: 0rem;
+  border-radius: 2px;
+  // box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: .1);
+  margin: 1rem 0;
+}
+
+
+/* PROJECTCARD */
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-container.card {
+  background-color: $cardColor;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.projectDetails {
+  display: flex;
+  align-items: center;
+}
+
+.projectImage {
+  width: 60%;
+  background-position: left;
+  background-size: cover;
+  background-color: $secondaryColor;
+  border: 3px solid $secondaryColor;
+  border-radius: .25rem;
+
+  &:hover {
+    background-color: lighten($color: $backgroundColor, $amount: 35%);
+    background-blend-mode: overlay;
+
+  }
+}
+
+.projectImageContainer {
+  padding: 1rem;
+}
+
+@include media-breakpoint-down(md) {
+
+  // when featured project image is stacked on card
+  .projectImage {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
 }

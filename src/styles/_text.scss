@@ -8,6 +8,7 @@ headerFont {
   font-weight: 300;
   font-style: normal;
   color: $secondaryColor;
+  text-align: left;
 }
 
 primaryFont {
@@ -15,6 +16,7 @@ primaryFont {
   font-weight: 400;
   font-style: normal;
   color: $primaryColor;
+  text-align: left;
 }
 
 p {
@@ -23,9 +25,66 @@ p {
   letter-spacing: .02rem;
 }
 
-h3 {
+h3, h4, h5 {
   @extend headerFont;
   letter-spacing: .03rem;
   font-weight: 400 !important;
   font-style: normal;
 }
+
+h2 {
+  @extend primaryFont;
+  letter-spacing: .03rem;
+  font-weight: 500 !important;
+  font-style: normal;
+}
+
+.intro-hello {
+  font-size: 30px;
+  color: #656573;
+  // text-align: left;
+}
+
+.intro-name {
+  font-size: 90px;
+  font-weight: 700;
+  font-kerning: none;
+  letter-spacing: -.5px;
+  line-height: 80px;
+  margin: 1rem 0;
+  margin-left: -4px;
+  // text-align: left;
+}
+
+.intro-tagline {
+  font-size: 40px;
+  color: #656573;
+  // text-align: left;
+}
+
+/* PORTFOLIO */
+
+// technologies listed on each project
+.projectTechStack {
+  @extend headerFont;
+  color: $secondaryColor;
+  font-size: .95rem;
+  &:hover {
+    color: darken($color: $secondaryColor, $amount: 5%)
+  }
+}
+
+// technology list separator
+.projectTechStackSep {
+  @extend .projectTechStack;
+  color: $tertiaryColor;
+  margin: 0 4px;
+}
+
+// 'featured project' line
+// .projectFeatured {
+//   @extend codeFont;
+//   color: $primaryColor;
+//   font-size: .85rem;
+//   margin-bottom: .5rem;
+// }

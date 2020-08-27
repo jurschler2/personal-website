@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard"
 import { projects } from "../content/data"
-import "./Portfolio.css";
-import { Container } from "reactstrap";
+// import "./Portfolio.css";
+import { Container, Row, Col } from "reactstrap";
 
 /**
  *  DESCRIPTION:
@@ -20,19 +20,31 @@ function Portfolio() {
                               <ProjectCard title={p.title} 
                                            description={p.description} 
                                            gallery={p.gallery}
-                                           link={p.link} />
+                                           link={p.link}
+                                           tech={p.tech} />
                              )
                        )
   }
 
   return (
    <Container className="sectionContainer" id="/portfolio"> 
-    <div className="portfolio-header">
-      Here are some things I have built:
-    </div>
-    <div className="projectcard-container">
+   <Row>
+     <Col md={12} lg={12}>
+       <div className="portfolio-header">
+          <h3 data-aos="fade-down" className="text-center">
+            Here are some things I have built:
+          </h3>
+          <div data-aos="fade" className="portfolioRule mx-auto mt-3 mb-5"></div>
+       </div>
+     </Col>
+   
+    <Col md={12} lg={12}>
+
+    <div className="projectCardContainer">
       {renderProjects()}
     </div> 
+    </Col>
+   </Row>
    </Container>
   )
 }

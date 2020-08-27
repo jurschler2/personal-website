@@ -1,9 +1,8 @@
 import React from "react";
 import BulletPoint from "./BulletPoint";
 import { points, images } from "../content/data";
+import { Container, Image, Row, Col  } from "react-bootstrap"
 // import "./About.css";
-import { Container, Row, Col } from "reactstrap";
-import { Image } from "react-bootstrap"
 
 /**
  *  DESCRIPTION:

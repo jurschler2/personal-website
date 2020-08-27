@@ -1,6 +1,6 @@
 import React from "react";
-import {Container} from "reactstrap";
-import "./Home.css"
+import { Container, Row, Col } from "react-bootstrap"
+// import "./Home.css"
 
 /**
  *  DESCRIPTION:
@@ -14,11 +14,14 @@ function Home() {
 
   return (
     <Container className="sectionContainer" id="/">
-      <div className="home-container">
-        <p className="intro-hello">Hello there, my name is</p>
-        <p className="intro-name">Joseph Urschler.</p>
-        <p className="intro-tagline">I like to build things.</p>
-      </div>
+      <Row>
+        <Col xs={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }}>
+          <h4 data-aos-delay="100" data-aos="fade"className="intro-hello">Hello there, my name is</h4>
+          <h2 data-aos-delay="900" data-aos="fade" className="intro-name">Joseph Urschler</h2>
+          <div data-aos-delay="1500" data-aos="fade-right"className="homeRule"></div>
+          <h3 data-aos-delay="2000" data-aos="fade" className="intro-tagline">I like to build things.</h3>
+        </Col>
+      </Row>
     </Container>
   )
 }

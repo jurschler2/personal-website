@@ -5,7 +5,8 @@ import {
   CarouselControl,
   CarouselIndicators
 } from 'reactstrap';
-import "./ProjectCard.css";
+import { Card, Row, Col } from 'react-bootstrap';
+// import "./ProjectCard.css";
 
 /**
  *  DESCRIPTION:
@@ -15,7 +16,7 @@ import "./ProjectCard.css";
  *  CHILDREN: ProjectCard
  */
 
-function ProjectCard({ title, description, gallery, link }) {
+function ProjectCard({ title, description, gallery, link, tech }) {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -44,35 +45,58 @@ function ProjectCard({ title, description, gallery, link }) {
         onExited={() => setAnimating(false)}
         key={item.img}
       >
-        <img src={item.img} alt={item.altText}/>
+        <img className="projectImage" src={item.img} alt={item.altText}/>
         <div className="carousel-caption"><strong>{item.caption}</strong></div>
       </CarouselItem>
     );
   });
 
+  const createTechTags = (tech, title) => {
+    let tags = [];
+    for (let t of tech) {
+      if (tags.length === tech.length - 1) {
+        tags.push(<span key={`${title}-${t}`} className="projectTechStack">{t}</span>);
+      } else {
+        tags.push(
+          <span key={`${title}-${t}`} className="projectTechStack">{t} <span className="projectTechStackSep">| </span></span>
+        );
+      }
+    }
+    return tags;
+  }
+
+  const techStack = createTechTags(tech, title);
+
   
 
   return (
-  <div className="project-container">
-    <div className="project-img-container" data-aos="fade-right">
-      <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-      >
-        <CarouselIndicators items={gallery} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-      </Carousel>    
-    </div>
-    <div className="project-description-container" data-aos="fade-left">
-      <div className="project-title"><strong>{title}</strong></div>
-      <div className="project-description">
-        <p>{description} Check it out on <a href={`${link}`}>Github</a>.</p>
-      </div>
-    </div>
-  </div>
+  <Card className="project-container col-12" data-aos="fade-right">
+    <Row>
+      <Col md={12} lg={12}>
+        <div className="projectImageContainer">
+          <Carousel
+            activeIndex={activeIndex}
+            next={next}
+            previous={previous}
+            >
+            <CarouselIndicators items={gallery} activeIndex={activeIndex} onClickHandler={goToIndex} />
+            {slides}
+            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+          </Carousel>    
+        </div>
+      </Col>
+      <Col md={12} lg={12} className="projectDetails">
+        <div>
+            <h3 className="project-title"><strong>{title}</strong></h3>
+            <p className="projectTechStack">{techStack}</p>
+            <div className="project-description">
+              <p>{description} Check it out on <a href={`${link}`}>Github</a>.</p>
+          </div>
+        </div>
+      </Col>
+    </Row>
+  </Card>
   )
 }
 
