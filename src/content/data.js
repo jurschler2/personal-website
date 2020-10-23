@@ -38,7 +38,7 @@ export const points = [
 export const projects = [
   {"title": "Microblog React App",
    "link": "https://github.com/jurschler2/react-redux-microblog",
-   "demo": "microblog.jurschler.com",
+   "demo": "https://microblog.jurschler.com",
    "description": "Microblog is a full-stack React application that is a basic blogging site. Anyone is able to go to the site, create posts, vote on posts, and leave comments on posts. The primary focus of this project was state management through the usage of React Redux. The rest of the frontend was built out using React. The backend was written Node/Express, and handles calls from the frontend to update post data within a PostgreSQL database. This project was my first time using Redux for more robust state management, and it helped me understand just how useful Redux could be, especially for an application that should be scalable with many posts/comments/etc.", 
    "gallery": [
      {"img": microblog_1, "altText": "Image 1", "caption":"Landing Page"},
@@ -48,7 +48,7 @@ export const projects = [
    ],
   "tech": ['JavaScript', 'React', 'Redux', 'Node', 'Express', 'PostgreSQL']},
   {"title": "Jobly React App",
-   "demo": "jobly.jurschler.com",
+   "demo": "https://jobly.jurschler.com",
    "link": "https://github.com/jurschler2/react-jobly",
    "description": "Jobly is a full-stack React application that enables users to apply for jobs at specific companies. To view the job listings, users must sign up and log in to receive a login token for authentication. Nearly all routes in this site are protected by a middleware authentication function that validates the login token provided by the user. Valid users are able to search for jobs, apply for jobs, and edit their profiles. This was one of my first React projects, and it helped me learn the usefulness of components and hooks, as well as frontend hierarchical design.", 
    "gallery": [

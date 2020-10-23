@@ -87,7 +87,7 @@ function ProjectCard({ title, description, gallery, demo, link, tech }) {
             <h3 className="project-title"><strong>{title}</strong></h3>
             <p className="projectTechStack">{techStack}</p>
             <div className="project-description">
-  <p>{description} Check it out on <a href={`${link}`}>Github</a>. Check out the <a href={`${demo}`}>demo</a>.</p>
+            <p>{description} Check it out on <a href={`${link}`}>Github</a>. Check out the <a href={`${demo}`}>demo</a>.</p>
           </div>
         </div>
       </Col>
