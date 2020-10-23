@@ -15,7 +15,7 @@ import { Card, Row, Col } from 'react-bootstrap';
  *  CHILDREN: ProjectCard
  */
 
-function ProjectCard({ title, description, gallery, link, tech }) {
+function ProjectCard({ title, description, gallery, demo, link, tech }) {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -87,7 +87,7 @@ function ProjectCard({ title, description, gallery, link, tech }) {
             <h3 className="project-title"><strong>{title}</strong></h3>
             <p className="projectTechStack">{techStack}</p>
             <div className="project-description">
-              <p>{description} Check it out on <a href={`${link}`}>Github</a>.</p>
+  <p>{description} Check it out on <a href={`${link}`}>Github</a>. Check out the <a href={`${demo}`}>demo</a>.</p>
           </div>
         </div>
       </Col>

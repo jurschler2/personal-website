@@ -19,6 +19,7 @@ function Portfolio() {
                               <ProjectCard title={p.title} 
                                            description={p.description} 
                                            gallery={p.gallery}
+                                           demo={p.demo}
                                            link={p.link}
                                            tech={p.tech} />
                              )
