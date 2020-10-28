@@ -97,13 +97,11 @@ $cardColor: #bdbdc3;
   background-position: left;
   background-size: cover;
   background-color: $secondaryColor;
-  border: 3px solid $secondaryColor;
-  border-radius: .25rem;
-
+  
   &:hover {
     background-color: lighten($color: $backgroundColor, $amount: 35%);
     background-blend-mode: overlay;
-
+    
   }
 }
 
@@ -113,6 +111,14 @@ $cardColor: #bdbdc3;
   // padding-right: 20%;
   padding: 1rem;
   margin: auto;
+}
+
+.projectImageContainer img {
+  
+  width: 100%;
+  border: 2px solid $secondaryColor;
+  border-radius: .25rem;
+
 }
 
 /* CONTACT */

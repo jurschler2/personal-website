@@ -15,7 +15,7 @@ import { Card, Row, Col } from 'react-bootstrap';
  *  CHILDREN: ProjectCard
  */
 
-function ProjectCard({ title, description, gallery, demo, link, tech }) {
+function ProjectCard({ title, description, demoGIF, gallery, demo, link, tech }) {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -63,6 +63,15 @@ function ProjectCard({ title, description, gallery, demo, link, tech }) {
     return tags;
   }
 
+  const renderGif = () => {
+
+    console.log(`This is the demoGIF for ${title}:`, demoGIF)
+    return (
+      <img src={demoGIF} alt={demoGIF}/>
+    )
+  }
+
+
   const techStack = createTechTags(tech, title);
 
   return (
@@ -70,16 +79,19 @@ function ProjectCard({ title, description, gallery, demo, link, tech }) {
     <Row>
       <Col md={12} lg={12}>
         <div className="projectImageContainer">
-          <Carousel
-            activeIndex={activeIndex}
-            next={next}
-            previous={previous}
-            >
-            <CarouselIndicators items={gallery} activeIndex={activeIndex} onClickHandler={goToIndex} />
-              {slides}
-            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-          </Carousel>    
+          {demoGIF.length > 2
+              ? renderGif()
+              : <Carousel
+                    activeIndex={activeIndex}
+                    next={next}
+                    previous={previous}
+                    >
+                    <CarouselIndicators items={gallery} activeIndex={activeIndex} onClickHandler={goToIndex} />
+                      {slides}
+                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+                    <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+                  </Carousel>    
+          }
         </div>
       </Col>
       <Col md={12} lg={12} className="projectDetails">

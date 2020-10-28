@@ -19,6 +19,7 @@ import microblog_1 from "../images/microblog_1.png";
 import microblog_2 from "../images/microblog_2.png";
 import microblog_3 from "../images/microblog_3.png";
 import microblog_4 from "../images/microblog_4.png";
+import apartmentRankerDemo from "../images/apartmentRankerDemo.gif";
 
 /**
  *  DESCRIPTION:
@@ -36,21 +37,32 @@ export const points = [
 ];
 
 export const projects = [
+  {"title": "Apartment Ranker",
+   "link": "https://github.com/jurschler2/apartment-ranker",
+   "demo": "https://apartment-ranker.jurschler.com",
+   "description": "Apartment Ranker is a full-stack React and Flask application. The purpose of the site is to provide a user the ability to quickly and visually compare apartments enabling a streamlined decision-making process on where to live next. A user first provides a link to an apartment listing on Craigslist, which is accepted by the Flask backend. The server uses Selenium to scrape the Craigslist post for relevant information, which is then returned to the frontend and stored in both the Redux store and PostgreSQL database. Populated apartments can be ranked from 0 - 100 for several key criteria which aggregate into a single, aggregated ranking value. The apartments are presented in a descending order to show the better matches first.", 
+   "demoGIF": apartmentRankerDemo,
+   "gallery": [
+    {"img": "img1", "altText": "img1", "caption":"img1"}
+  ],
+   "tech": ['JavaScript', 'React', 'Redux', 'Python', 'Flask', 'Selenium', 'PostgreSQL']},
   {"title": "Microblog React App",
    "link": "https://github.com/jurschler2/react-redux-microblog",
    "demo": "https://microblog.jurschler.com",
    "description": "Microblog is a full-stack React application that is a basic blogging site. Anyone is able to go to the site, create posts, vote on posts, and leave comments on posts. The primary focus of this project was state management through the usage of React Redux. The rest of the frontend was built out using React. The backend was written Node/Express, and handles calls from the frontend to update post data within a PostgreSQL database. This project was my first time using Redux for more robust state management, and it helped me understand just how useful Redux could be, especially for an application that should be scalable with many posts/comments/etc.", 
+   "demoGIF": "",
    "gallery": [
      {"img": microblog_1, "altText": "Image 1", "caption":"Landing Page"},
      {"img": microblog_2, "altText": "Image 2", "caption":"Add a Post"},
      {"img": microblog_3, "altText": "Image 3", "caption":"Post Details and Add Comments"},
      {"img": microblog_4, "altText": "Image 4", "caption":"Edit a Post"}
    ],
-  "tech": ['JavaScript', 'React', 'Redux', 'Node', 'Express', 'PostgreSQL']},
+   "tech": ['JavaScript', 'React', 'Redux', 'Node', 'Express', 'PostgreSQL']},
   {"title": "Jobly React App",
    "demo": "https://jobly.jurschler.com",
    "link": "https://github.com/jurschler2/react-jobly",
    "description": "Jobly is a full-stack React application that enables users to apply for jobs at specific companies. To view the job listings, users must sign up and log in to receive a login token for authentication. Nearly all routes in this site are protected by a middleware authentication function that validates the login token provided by the user. Valid users are able to search for jobs, apply for jobs, and edit their profiles. This was one of my first React projects, and it helped me learn the usefulness of components and hooks, as well as frontend hierarchical design.", 
+   "demoGIF": "",
    "gallery": [
      {"img": jobly_1, "altText": "Image 1", "caption":"Landing Page"},
      {"img": jobly_2, "altText": "Image 2", "caption":"User Sign-Up"},
@@ -61,11 +73,12 @@ export const projects = [
      {"img": jobly_7, "altText": "Image 7", "caption":"Apply to Any Jobs"},
      {"img": jobly_8, "altText": "Image 8", "caption":"User's Profile"}
    ],
-  "tech": ['JavaScript', 'React', 'Node', 'Express', 'PostgreSQL']},
+   "tech": ['JavaScript', 'React', 'Node', 'Express', 'PostgreSQL']},
   {"title": "Warbler Flask App",
    "demo": "",
    "link": "https://github.com/jurschler2/flask-warbler",
    "description": "Warbler is a full-stack Flask application that functions like a lite clone of Twitter. To interact with the site, a user must first sign up and then login to receive a login token for authentication. Nearly all functionality is protected by a python decorator in the Flask backend to authenticate a user. Once inside the application, users can follow other users, write warbles (tweets), view follower or all warbles, like warbles, among other things. This project was written with a Jinja-supplied frontend, Flask backend, and a PostgreSQL database. The focus of this project was primarily on the database structure and table schemas to map out relationships between users, warbles, etc. SQLAlchemy was used in conjunction with the Flask routes to abstract user specific data based on the route requested. At the time, this was my biggest Python (as well as SQL) project, and it helped me get a better understanding of backend routing and database design patterns.", 
+   "demoGIF": "",
    "gallery": [
      {"img": warbler_1, "altText": "Image 1", "caption": "Landing Page"},
      {"img": warbler_2, "altText": "Image 2", "caption": "User Sign-Up"},

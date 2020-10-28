@@ -15,9 +15,12 @@ function Portfolio() {
 
   const renderProjects = () => {
 
+    console.log("These are the projects:", projects)
+
     return projects.map(p => (
                               <ProjectCard title={p.title} 
                                            description={p.description} 
+                                           demoGIF={p.demoGIF}
                                            gallery={p.gallery}
                                            demo={p.demo}
                                            link={p.link}
