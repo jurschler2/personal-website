@@ -45,7 +45,7 @@ export const projects = [
    "gallery": [
     {"img": "img1", "altText": "img1", "caption":"img1"}
   ],
-   "tech": ['JavaScript', 'React', 'Redux', 'Python', 'Flask', 'Selenium', 'PostgreSQL']},
+   "tech": ['JavaScript', 'React', 'Redux', 'Python', 'Flask', 'Selenium', 'PostgreSQL', 'Sass', 'Heroku']},
   {"title": "Microblog React App",
    "link": "https://github.com/jurschler2/react-redux-microblog",
    "demo": "https://microblog.jurschler.com",
