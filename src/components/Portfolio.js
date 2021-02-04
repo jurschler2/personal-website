@@ -15,7 +15,6 @@ function Portfolio() {
 
   const renderProjects = () => {
 
-    console.log("These are the projects:", projects)
 
     return projects.map(p => (
                               <ProjectCard title={p.title} 

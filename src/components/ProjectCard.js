@@ -65,7 +65,6 @@ function ProjectCard({ title, description, demoGIF, gallery, demo, link, tech })
 
   const renderGif = () => {
 
-    console.log(`This is the demoGIF for ${title}:`, demoGIF)
     return (
       <img src={demoGIF} alt={demoGIF}/>
     )
